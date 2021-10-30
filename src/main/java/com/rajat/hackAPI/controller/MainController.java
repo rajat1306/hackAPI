@@ -1,5 +1,6 @@
 package com.rajat.hackAPI.controller;
 
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -21,6 +22,11 @@ public class MainController {
 	@PutMapping
 	public String putRequest() {
 		return "PUT Request";
+	}
+	
+	@DeleteMapping
+	public String deleteRequest() {
+		return "DELETE Request";
 	}
 	
 }

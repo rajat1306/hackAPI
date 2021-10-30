@@ -2,6 +2,7 @@ package com.rajat.hackAPI.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -15,6 +16,11 @@ public class MainController {
 	@PostMapping
 	public String postRequest() {
 		return "POST Request";
+	}
+	
+	@PutMapping
+	public String putRequest() {
+		return "PUT Request";
 	}
 	
 }
